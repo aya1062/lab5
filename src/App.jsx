@@ -7,11 +7,15 @@ import Detbook from './Detbook';
 function App() {
   return (
     <>
+    <ul>
+      <li><NavLink to="/Lib">Show Books</NavLink></li>
+<li><NavLink to="/Detbook">Show Wishlist</NavLink></li>
+
+    </ul>
     <Routes>
-      <Route path='books' element={<Lib></Lib>}/>
-      <Route path='wishlist' element={<Detbook></Detbook>}/>
+      <Route path='Lib' element={<Lib></Lib>}></Route>
+      <Route path='Detbook' element={<Detbook></Detbook>}></Route>
     </Routes>
-    <Lib />
     </> 
   )
 }
